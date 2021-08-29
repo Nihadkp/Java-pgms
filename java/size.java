@@ -2,10 +2,10 @@ public class size
 {
 	public static void main(String[] Args)
 	{
-		int sz=29;
+		int sz=39;
 		switch(sz)
 		{
-			case 29:System.out.println(" small ");
+			case 39:System.out.println(" small ");
 			break;
 			case 42:System.out.println(" medium ");
 			break;
