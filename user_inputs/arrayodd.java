@@ -12,14 +12,14 @@ public class arrayodd
 		{
 			a[i]=sc.nextInt();
 		}
-		System.out.print("array elements are"+a);
+		System.out.print("array elements are");
+		for(int i=0;i<l;i++)
+		{
+			System.out.print(a[i]+" , ");
+		}
 		System.out.print("\n ");
 		System.out.print("Numbers in odd position are ;");
 		System.out.print("\n");
-
-
-
-
 		for(int i=0;i<l;i++)
 		{
 			if(i%2!=0)
