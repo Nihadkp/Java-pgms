@@ -41,8 +41,8 @@ class Literature extends Book
 }
 class Fiction extends Book
 {
-    String Fiction_name;
-    Fiction(String pname,String bname,String fname)
+    	String Fiction_name;
+    	Fiction(String pname,String bname,String fname)
 	{
         	super(pname,bname);
         	Fiction_name=fname;
