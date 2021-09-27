@@ -1,39 +1,29 @@
-import java.lang.reflect.Array;
-import java.util.*;
-class stringarray
+
+import java.util.Arrays;
+import java.util.Scanner;
+class sort
 {
-	int limit;
-    	String[] str;
-	stringarray(int limit)
-	{
-        	this.limit = limit;
-        	str = new String[limit];
+    	String str;
+    	sort(String string)
+    	{
+        	str=string;
     	}
-	void CreateArray(Scanner read)
-	{
-        	System.out.println("Enter the elements : ");
-        	for (int i=0; i<limit; i++)
-        	{
-           		 str[i] = read.nextLine();
-        	}
-    	}
-	void SortString()
-	{
-        	Arrays.sort(str);
-        	System.out.print(Arrays.toString(str)+"\n");
+    	void sorted()
+    	{
+    		char[] arr = str.toCharArray();
+    		Arrays.sort(arr);
+    		String str1 = new String(arr);
+    		System.out.println(str1);
     	}
 }
-public class sortstring
+public class main
 {
-    	public static void main(String[] args)
+   	public static void main(String[] args) 
 	{
-        	int limit;
-        	Scanner read = new Scanner(System.in);
-        	System.out.print("Enter the limit:");
-        	limit = read.nextInt();
-        	read.nextLine();
-        	stringarray sa = new stringarray(limit);
-        	sa.CreateArray(read);
-        	sa.SortString();
-    	}
+    		Scanner sc=new Scanner(System.in);
+    		System.out.println("Enter the string : ");
+    		String string = sc.next();
+    		sort obj=new sort(string);
+    		obj.sorted();
+   	}
 }
